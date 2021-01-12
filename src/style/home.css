@@ -1,0 +1,28 @@
+.container{
+    margin: 10px auto;
+    width: 400px;
+    text-align: center;
+   
+}
+.container h2{
+    border: 2px solid;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+.container li{
+    list-style-type: none;
+    border: 2px solid;
+    
+    padding: 20px 0;
+    margin: 5px 20px;
+}
+.container ul{
+    border-bottom: 2px dashed;
+    border-left: 2px dashed;
+    border-right: 2px dashed;
+    padding: 20px 0 !important;
+    margin: 0;
+}
+.container .task3{
+    border-radius: 0 0 10px 10px;
+}
