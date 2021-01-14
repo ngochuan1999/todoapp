@@ -25,19 +25,16 @@ function Home() {
     ]
     const [dataTask, setDataTask] = useState(DATA)
     const updateData = (value, index) => {
-        const task = {
-            ...dataTask[index],
-            content: value,
-        }
-        const dataTemp = [
-            ...dataTask,
-            task,
-        ]
+        
+        const dataTemp =[ ...dataTask ];
+        dataTask[index].content = value;
         setDataTask(dataTemp);
     }
+
     const renderTask = () => {
         return dataTask.map((item, index) => {
             return <Task
+                index={index}
                 key={index}
                 {...item}
                 isLastItem={index === dataTask.length - 1}
